@@ -178,6 +178,8 @@ def play(screen, game_grid):
 
     screen.blit(player.image, player.rect)
     ghosts.draw(screen)
+    
+    pygame.display.update()
 
     # Previous character locations to keep track of areas for updating screen
     prev_player_locations = [obj_grid[0][ROW-1].rect, obj_grid[COL-1][0].rect]
